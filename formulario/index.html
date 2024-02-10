@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <form action="#">
+        <header>
+            <h1>formulário</h1>
+            <h5>Rastreio de informação</h5>
+        </header>
+        <div class="divNome">
+
+            
+            <div class="input">
+                <input type="text" placeholder="Nome:" >
+              
+            </div>
+        
+            <div class="input">
+                <input type="email" placeholder="Email:" >
+              
+            </div>
+        
+            <div class="input">
+                <input type="text" placeholder="endereço:" >
+              
+            </div>
+
+            <div class="input">
+                <input type="password" placeholder="senha:" >
+            </div>
+            
+
+        </div>
+        
+        <div class="checkR ">
+           <img class="ocultar" src="icons/right-arrow.png" alt="">
+            <div class="up">
+                <h2>Update Sincronização</h2>
+                <div class="checked">
+                    <div class="checkbox">
+                        <input type="checkbox" >
+                    </div>
+                    <label for="#">gerar PDF</label>
+                    <a href="#">visualizar</a>
+                </div>
+                <div class="checked">
+                    <div class="checkbox">
+                        <input type="checkbox" >
+                    </div>
+                    <label for="#">compactar formulário</label>
+                    <a href="#">visualizar</a>
+                </div>
+                <div class=" checked">
+                    <div class="checkbox">
+                        <input type="checkbox" >
+                    </div>
+                    <label for="#">SMS-automático</label>
+                    <a href="#">visualizar</a>
+                </div>
+      
+            </div>
+            
+            
+        </div>
+        <div class="checar">
+            <input type="checkbox">
+            <label for="#">Concordo com os <a href="#">termos</a> e <a href="#">políticas de Privacidade</a></label>
+        </div>
+        <input type="submit" class="btn" value="iniciar pesquisa">
+        <div class="media">
+            <div class="MediaIcon" >
+                <img class="icon" src="icons/bxl-instagram.svg" alt="">
+            </div>
+            <div class="MediaIcon" >
+                <img class="icon" src="icons/bxl-facebook.svg" alt="">
+            </div>
+           
+            <div class="MediaIcon" >
+                <img class="icon" src="icons/bxl-linkedin-square.svg" alt="">
+            </div>
+            <div class="MediaIcon" >
+                <img class="icon" src="icons/bxl-github.svg" alt="">
+            </div>
+            <div class="MediaIcon" >
+                <img class="icon" src="icons/bxl-gmail.svg" alt="">
+            </div>
+        </div>
+    </form>
+    <div class="FormImg" >
+        <img class="icon" src="icons/colaboracao.png" alt="">
+    </div>
+
+    <script>
+        let ocultar = document.querySelector(".ocultar");
+        let up = document.querySelector(".up");
+        let btn = document.querySelector(".btn");
+        let FormImg = document.querySelector(".FormImg");
+
+
+        ocultar.addEventListener("click", () =>{
+            ocultar.classList.toggle('active');
+            up.classList.toggle('active');
+        })
+        btn.addEventListener("click", () =>{
+            FormImg.classList.toggle('active');
+        })
+    </script>
+</body>
+</html>
